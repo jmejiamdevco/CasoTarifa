@@ -27,9 +27,9 @@ public class CasoTarifaTest {
         Random miNumero = new Random();
         int numero = miNumero.nextInt(2);
         if(numero == 1){
-            assertEquals(3270, casoTarifa.calculoTarifaFinal(1, 3000));
+            assertEquals(3270, casoTarifa.calculoTarifaFinal(1, 3000), 0);
         }else {
-            assertEquals(3570, casoTarifa.calculoTarifaFinal(0,  3000));
+            assertEquals(3570, casoTarifa.calculoTarifaFinal(0,  3000), 0);
         }
     }
 }
