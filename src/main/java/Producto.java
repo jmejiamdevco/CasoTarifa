@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class Producto {
+public class Producto {
+
+    String nombre;
+    double precio;
+    double IVA;
+    
+
 }
