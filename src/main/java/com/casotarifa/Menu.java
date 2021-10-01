@@ -1,4 +1,4 @@
-package com.example.CasoTarifa;
+package com.casotarifa;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -51,7 +51,6 @@ public class Menu {
                 break;
         }
     }
-
     public static int Random(){
         Random miNumero = new Random();
         int numero = miNumero.nextInt(2);
