@@ -1,4 +1,4 @@
-package com.example.CasoTarifa;
+package com.casotarifa;
 
 public class CasoTarifa {
 

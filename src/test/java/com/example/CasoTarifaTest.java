@@ -1,16 +1,22 @@
 package com.example;
 
-import com.example.CasoTarifa.CasoTarifa;
-import org.junit.Test;
+import com.casotarifa.CasoTarifa;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
+
 import java.util.Random;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class CasoTarifaTest {
+    static CasoTarifa casoTarifa;
+
+    @BeforeAll
+    public static void beforeAll() {
+        casoTarifa = new CasoTarifa();
+    }
     @Test
     public void TestDescuentoObtenido() {
-        CasoTarifa casoTarifa = new CasoTarifa();
         Random miNumero = new Random();
         int numero = miNumero.nextInt(2);
 
@@ -23,7 +29,6 @@ public class CasoTarifaTest {
 
     @Test
     public void TestCalcularTarifa(){
-        CasoTarifa casoTarifa = new CasoTarifa();
         Random miNumero = new Random();
         int numero = miNumero.nextInt(2);
         if(numero == 1){
