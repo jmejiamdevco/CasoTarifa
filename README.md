@@ -1,3 +1,3 @@
 # Práctica 3 Caso tarifa
 
-### Hecho con Junit 4
+### Hecho con en java y Junit 
